@@ -12,13 +12,13 @@ def main(n):
     f=n//10%10
     g=n%10
     if a>s and a>d and a>f and a>g:
-        return 0
+        return 1
     if s>a and s>d and s>f and s>g:
-        return 1 
-    if d>a and d>s and d>f and d>g:
         return 2 
-    if f>a and f>s and f>d and f>g:
+    if d>a and d>s and d>f and d>g:
         return 3 
+    if f>a and f>s and f>d and f>g:
+        return 4 
     if g>a and g>s and g>d and g>f:
-        return 4
+        return 5
 print(main(76514))
