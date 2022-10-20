@@ -6,4 +6,19 @@ def main(n):
     Returns:
         int: return answer.
     """
-    return
+    a=n//10000
+    s=n//1000%10
+    d=n//100%10
+    f=n//10%10
+    g=n%10
+    if a>s and a>d and a>f and a>g:
+        return 0
+    if s>a and s>d and s>f and s>g:
+        return 1 
+    if d>a and d>s and d>f and d>g:
+        return 2 
+    if f>a and f>s and f>d and f>g:
+        return 3 
+    if g>a and g>s and g>d and g>f:
+        return 4
+print(main(76514))
